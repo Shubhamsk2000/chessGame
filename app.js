@@ -3,7 +3,7 @@ const socket = require("socket.io");
 const http = require("http");
 const { Chess } = require("chess.js");
 const path = require("path");
-const POST = 3002;
+const PORT = 3002;
 
 const app = express();
 
@@ -64,7 +64,7 @@ io.on("connection", (socket)=>{
 })
 
 // starting server 
-server.listen(POST, ()=>{
+server.listen(PORT, ()=>{
     console.log("server started....");
 })
 
